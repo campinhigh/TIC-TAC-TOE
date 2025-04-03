@@ -3,56 +3,49 @@
     padding: 0;
 }
 
-body{
+body {
     background-color: #8a84e2;
     text-align: center;
 }
 
-.container{
-    height: 70vh;
+.container {
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.game{
-    height: 60vmin;
-    width: 60vmin;
-    justify-content: center;
-    align-items: center;
-    gap: 3vmin;
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 50vmin;
 }
 
-.box{
-    height: 18vmin;
-    width: 18vmin;
+.box {
+    height: 15vmin;
+    width: 15vmin;
     border-radius: 1rem;
     border-color: black;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
     color: #3838c4;
 }
 
-.reset{
+.reset, .newbutton {
     padding: 1rem;
     margin: 1rem;
     font-size: 2rem;
     background-color: #84afe6;
-    color: black;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
-.newbutton{
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 2rem;
-    background-color: #84afe6;
-    color: black;
-    border-radius: 1rem;
+#message-container {
+    position: absolute;
+    top: 10vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: white;
+    display: none;
 }
-
-.msg{
-    color: black;
-    font-size: 8vmin;
-}
-
